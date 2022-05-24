@@ -233,7 +233,7 @@ class UNet3(nn.Module):
 
 class UNet4(nn.Module):
 
-    def __init__(self, in_channels=3, mid_channels=12, out_channels=3):
+    def __init__(self, in_channels, mid_channels, out_channels):
         super(UNet4, self).__init__()
 
         self.conv0 = ConvolutionLayer(in_channels, out_channels, dilation=1)
@@ -279,7 +279,7 @@ class UNet4(nn.Module):
 
 class UNet5(nn.Module):
 
-    def __init__(self, in_channels=3, mid_channels=12, out_channels=3):
+    def __init__(self, in_channels, mid_channels, out_channels):
         super(UNet5, self).__init__()
 
         self.conv0 = ConvolutionLayer(in_channels, out_channels, dilation=1)
